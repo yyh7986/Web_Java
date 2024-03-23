@@ -1,12 +1,6 @@
 package com.ohgiraffers.level01.basic;
 
-
-public class Application1 {
-    public static void main(String[] args) {
-        int x = 2;
-        int y = 5;
-        char c = 'A'; // 'A'의 문자코드는 65
-    }
+public class Application01 {
     /* Application01
         int x = 2;
 		int y = 5;

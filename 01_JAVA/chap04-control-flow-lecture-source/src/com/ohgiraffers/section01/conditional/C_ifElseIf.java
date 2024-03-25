@@ -50,17 +50,20 @@ public class C_ifElseIf {
         String name = sc.nextLine();
         System.out.print("학생의 점수를 입력하세요 : ");
         int point = sc.nextInt();
+        String grade = "";
         if (point >= 90) {
-            System.out.println(name + "학생의 점수는 " + point + "점이며 학점은 A입니다.");
+            grade = "A";
         } else if (point >= 80) {
-            System.out.println(name + "학생의 점수는 " + point + "점이며 학점은 B입니다.");
+            grade = "B";
         } else if (point >= 70) {
-            System.out.println(name + "학생의 점수는 " + point + "점이며 학점은 C입니다.");
+            grade = "C";
         } else if (point >= 60) {
-            System.out.println(name + "학생의 점수는 " + point + "점이며 학점은 C입니다.");
+            grade = "D";
         }else{
-            System.out.println(name + "학생의 점수는 " + point + "점이며 학점은 F입니다.");
+            grade = "F";
         }
+        System.out.println(name + "학생의 점수는 " + point + "점이며 학점은 " + grade + "입니다.");
+
     }
 
 }

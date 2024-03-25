@@ -9,6 +9,13 @@ public class Application1 {
         A_nestedFor f = new A_nestedFor();
         // f.printGugudanFromTwoToNine();
         // f.printStarInputRowTime();
-        f.printTriangleStars();
+        // f.printTriangleStars();
+        B_while b = new B_while();
+        // b.testSimpleWhileStatement();
+        // b.testWhileExample();
+        // b.testWhileExample2();
+        C_doWhile c = new C_doWhile();
+        // c.testSimpleDoWhileStatement();
+        c.testDoWhileExample();
     }
 }

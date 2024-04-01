@@ -18,15 +18,14 @@ public class UserDTO {
      *  5. 직렬화(Serializable 구현)가 되어야 한다. (선택사항)
      * */
 
-    /* 멤버변수의 접근제어자는 private로 선언해야 함. */
+    /*멤버변수의 접근제어자는 private로 선언해야 함.*/
     private String id;
     private String pwd;
     private String name;
 
-    /* 기본생성자가 명시적으로 존재해야 한다.*/
-    public UserDTO(){
+    /*기본생성자가 명시적으로 존재해야 한다.*/
+    public UserDTO(){}
 
-    }
 
 
     public UserDTO(String id, String pwd, String name) {
@@ -35,7 +34,7 @@ public class UserDTO {
         this.name = name;
     }
 
-    /* 설정자(setter)*/
+    /*설정자(setter)*/
     public void setId(String id) {
         this.id = id;
     }
@@ -48,7 +47,7 @@ public class UserDTO {
         this.name = name;
     }
 
-    /* 접근자(getter)*/
+    /*접근자(getter)*/
 
     public String getId() {
         return id;

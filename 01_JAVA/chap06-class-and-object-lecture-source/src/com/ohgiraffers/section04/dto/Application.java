@@ -1,6 +1,7 @@
 package com.ohgiraffers.section04.dto;
 
 public class Application {
+
     public static void main(String[] args) {
 
         /* 수업목표. 생성자를 이용한 초기화와 설정자를 이용한 초기화의 장단점을 이해할 수 있다. */
@@ -24,8 +25,8 @@ public class Application {
          *        (상황에 따라 interrupt 등 여러 가지 문제가 발생할 수 있음)
          *  */
 
-        /* 1. 생성자를 이용한 초기화 */
-        UserDTO user = new UserDTO("ohgiraffers", "ohgiraffers", "ohgiraffers");
+        /* 1. 생성자를 이용한 초기화  */
+        UserDTO user = new UserDTO("ohgiraffers","ohgiraffers","ohgiraffers");
         System.out.println(user.toString());
 
         /* 2. 기본생성자와 설정자를 이용한 초기화*/
@@ -37,4 +38,5 @@ public class Application {
         System.out.println(user2.toString());
 
     }
+
 }

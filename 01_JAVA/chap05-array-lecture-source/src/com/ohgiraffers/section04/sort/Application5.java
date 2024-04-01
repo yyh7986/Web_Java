@@ -1,6 +1,7 @@
 package com.ohgiraffers.section04.sort;
 
 public class Application5 {
+
     public static void main(String[] args) {
 
         /* 수업목표. 삽입정렬(insert sort)에 대해 이해하고 적용할 수 있다. */
@@ -27,17 +28,10 @@ public class Application5 {
 
             iarr[j+1] = temp;
         }
+
         /* 설명. 값 출력용 반복문 */
         for(int i = 0; i < iarr.length; i++){
             System.out.print(iarr[i] + " ");
         }
-
-        /*int[] iarr = {2, 5, 4, 6, 1, 3};
-
-        for (int i = 1; i < iarr.length-1; i++) {
-            for (int j = 1; j < i; j++) {
-                if(iarr[i] < iarr[i-j])
-            }
-        }*/
     }
 }

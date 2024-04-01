@@ -1,6 +1,7 @@
 package com.ohgiraffers.section04.constructor;
 
 public class User {
+
     private String id;
     private String pwd;
     private String name;
@@ -32,10 +33,10 @@ public class User {
     /*
     * 생성자 작성 시 주의할 점
     * 1. 생성자 메소드는 반드시 클래스 이름과 동일해야 한다. 대/소문자까지 같아야함.
-    * 2. 생성자 메소드는 반환형을 작성하지 않는다. (작성하는 경우 메소드로 인식한다.)
+    * 2. 생성자 메소드는 반환형을 작성하지 않는다.(작성하는 경우 메소드로 인식한다.)
     * */
 
-    /* 1. 기본생성자 (default constructor)*/
+    /* 1.기본생성자(default constructor) */
 
     public User(){
         /*
@@ -45,19 +46,24 @@ public class User {
         * */
 
         System.out.println("기본 생성자 호출함...");
+
     }
-    /* 주의사항. 동일한 이름의 생성자 혹은 메소드를 한 클래스 안에서 작성하는 것은 불가능하다.(컴파일 에러)*/
+    /* 주의사항. 동일한 이름의 생성자 혹은 메소드를 한 클래스 안에서 작성하는 것은 불가능하다.(컴파일에러)*/
+   // public User(){}
 
     /* 2. 매개변수 있는 생성자 */
-    /* id, pwd, name의 초기화를 담당할 생성자*/
-    public User(String id, String pwd, String name){
-        this.id = id;
-        this.name = name;
-        this.pwd = pwd;
+    /* id, pwd, name의 초기화를 담당할 생성자 */
+    public User(String id, String pwd,String name){
+       this.id = id;
+       this.name = name;
+       this.pwd = pwd;
 
         System.out.println("id, pwd, name을 초기화하는 생성자 호출됨...");
     }
-    public String getInformation() {
+
+
+
+    public String getinformation() {
         return "User{" +
                 "id='" + this.id + '\'' +
                 ", pwd='" + this.pwd + '\'' +

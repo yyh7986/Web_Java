@@ -1,11 +1,12 @@
 package com.ohgiraffers.section03.dto;
 
 public class MemberDTO {
-    private int number;     // 회원번호
-    private String name;    // 회원이름
-    private int age;        // 나이
-    private char gender;    // 성별
-    private double height;  // 키
+
+    private int number;     //회원번호
+    private String name;    //회원이름
+    private int age;         //나이
+    private char gender;      //성별
+    private double height;    //키
     private boolean isActivated; // 회원탈퇴여부(활성화 여부)
 
     /*
@@ -82,11 +83,10 @@ public class MemberDTO {
         return height;
     }
 
-    /* boolean의 접근자는 get으로 시작하지 않고 is로 시작하는 것이 일반적인 관례이다. */
+    /*boolean의 접근자는 get으로 시작하지 않고 is로 시작하는 것이 일반적인 관례이다. */
     public boolean isActivated() {
         return isActivated;
     }
-
 
     @Override
     public String toString() {
